@@ -1,4 +1,4 @@
-package main;
+package demos;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -47,11 +47,12 @@ public class GraphicsDemo extends Frame {
         g.fillArc(70, 350, 70, 70, 0, 75);
 
         // Drawing a polygon
-        int[] xPoints = {20, 200, 20, 200, 20};
-        int[] yPoints = {450, 450, 650, 650, 450};
+        int[] xpoints = {20, 200, 20, 200, 20};
+        int[] ypoints = {450, 450, 650, 650, 450};
         int num = 5;
 
-        g.drawPolygon(xPoints, yPoints, num);
+        Polygon p = new Polygon(xpoints, ypoints, num);
+        g.drawPolygon(p);
     }
 
 }
