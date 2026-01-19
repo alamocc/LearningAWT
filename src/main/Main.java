@@ -1,3 +1,4 @@
+import demos.ColorDemo;
 import demos.GraphicsDemo;
 import demos.ResizeMeDemo;
 
@@ -6,6 +7,7 @@ import java.awt.*;
 void main() {
     testGraphicsDemo();
     testResizeMe();
+    testColorDemo();
 }
 
 private static void testGraphicsDemo() {
@@ -21,5 +23,13 @@ private static void testResizeMe() {
 
     appwindow.setSize(200, 200);
     appwindow.setTitle("ResizeMe Demonstration on MouseRelease event");
+    appwindow.setVisible(true);
+}
+
+private static void testColorDemo() {
+    ColorDemo appwindow = new ColorDemo();
+
+    appwindow.setSize(340, 260);
+    appwindow.setTitle("Color Demonstration");
     appwindow.setVisible(true);
 }
