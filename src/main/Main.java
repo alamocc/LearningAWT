@@ -2,6 +2,7 @@ import demos.ColorDemo;
 import demos.GraphicsDemo;
 import demos.ResizeMeDemo;
 import demos.XORDemo;
+import fonts.ShowFonts;
 
 import java.awt.*;
 
@@ -10,6 +11,7 @@ void main() {
     testResizeMe();
     testColorDemo();
     testXORDemo();
+    testShowFonts();
 }
 // Test GraphicsDemo
 private static void testGraphicsDemo() {
@@ -45,4 +47,18 @@ private static void testXORDemo() {
     appwindow.setSize(new Dimension(300, 260));
     appwindow.setTitle("XOR Drawing Mode Demonstration");
     appwindow.setVisible(true);
+}
+
+// Show graphics environment fonts
+private static void testShowFonts() {
+    ShowFonts appwindow = new ShowFonts();
+
+    for(String s: appwindow.getFontlist())
+        System.out.print(s + ", ");
+
+    appwindow.setSize(new Dimension(500, 120));
+    appwindow.setTitle("Show Fonts");
+    appwindow.setVisible(true);
+
+
 }
