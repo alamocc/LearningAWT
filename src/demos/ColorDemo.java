@@ -4,9 +4,11 @@ import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
+// Demonstrate use of colors in drawing
 public class ColorDemo extends Frame {
 
     public ColorDemo() {
+        // Anonymous inner class to handle window close events
         addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
@@ -16,7 +18,7 @@ public class ColorDemo extends Frame {
     }
 
     public void paint(Graphics g){
-
+        // Define some custom colors
         Color c1 = new Color(255, 100, 100);
         Color c2 = new Color(100, 255, 100);
         Color c3 = new Color(100, 100, 255);

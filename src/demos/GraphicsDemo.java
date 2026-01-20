@@ -7,6 +7,7 @@ import java.awt.event.WindowEvent;
 public class GraphicsDemo extends Frame {
     public GraphicsDemo() {
 
+        // Anonymous inner class to handle window close events
         addWindowListener(new WindowAdapter() {
 
             @Override
@@ -16,6 +17,7 @@ public class GraphicsDemo extends Frame {
 
         });
 
+        // Set background and foreground colors
         setBackground(Color.white);
         setForeground(Color.BLUE);
     }

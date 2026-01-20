@@ -30,8 +30,10 @@ public class ResizeMeDemo extends Frame {
             }
         });
     }
-
+    //  paint method to draw diagonal lines
+    @Override
     public void paint(Graphics g) {
+        // Get the insets and size of the window
         Insets i = getInsets();
         d = getSize();
 
